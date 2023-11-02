@@ -1,5 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
+import ToDoItem from '../components/ToDoItem';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -16,7 +17,8 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <ToDoItem title={"first task"}/>
+        <ExploreContainer demo={"test"}/>
       </IonContent>
     </IonPage>
   );
